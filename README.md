@@ -1,1 +1,4 @@
-*This is a Flask App to make a sample Todo app*
+---------------------------------
+Flask Web App to make a Notes App
+---------------------------------
+
