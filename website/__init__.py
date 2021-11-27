@@ -1,8 +1,18 @@
 from flask import Flask
+from flask.scaffold import F
+from flask_sqlalchemy import SQLAlchemy
+from werkzeug.utils import format_string
+
+db=SQLAlchemy()
+DB_NAME="database_flask.db"
 
 def create_app():
     app=Flask(__name__)
     app.config['SECRET_KEY'] = 'secret_aroosh_key'
+    app.config["SQLALCHEMY_DATABASE_URI"] = f'sqlite:///{DB_NAME}'
+    db.init_app(app)
+
+    
     from .views import views
     from .auth import auth
 
