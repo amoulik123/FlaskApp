@@ -1,4 +1,4 @@
 ---------------------------------
-Flask Web App to make a Notes App
----------------------------------
+*Flask Web App to make a Notes App*
+----------------------------------
 
